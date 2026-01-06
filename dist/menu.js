@@ -1,4 +1,4 @@
-// Getting hamburguer menu in small screens
+// Obtém o menu hambúrguer em ecrãs pequenos
 const menu = document.getElementById("menu");
 const ulMenu = document.getElementById("ulMenu");
 
@@ -6,12 +6,12 @@ function menuToggle() {
   menu.classList.toggle("h-32");
 }
 
-// Browser resize listener
+// Ouvinte de redimensionamento do navegador
 window.addEventListener("resize", menuResize);
 
-// Resize menu if user changing the width with responsive menu opened
+// Redimensiona o menu se o utilizador alterar a largura com o menu responsivo aberto
 function menuResize() {
-  // First get the size from the window
+  // Primeiro, obtém o tamanho da janela
   const window_size = window.innerWidth || document.body.clientWidth;
   if (window_size > 640) {
     menu.classList.remove("h-32");
